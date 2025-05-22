@@ -9,10 +9,10 @@ This dataset offers valuable insights into trends and metrics related to hospita
   o Metrics are aggregated at national and state/territory levels, providing a comprehensive overview of respiratory illnesses across different regions.
 
 ### Data Points:
-  **Hospital capacity and occupancy: Highlights how many beds were available and occupied during the period**
-  **Hospitalizations and new admissions: Focuses on patient inflow due to respiratory illnesses**
-  **Illness-specific metrics: Breakdowns for COVID-19, Influenza, and RSV, three major respiratory diseases during the timeline**
+  1- Hospital capacity and occupancy: Highlights how many beds were available and occupied during the period
+  2- ospitalizations and new admissions: Focuses on patient inflow due to respiratory illnesses
+  3- Illness-specific metrics: Breakdowns for COVID-19, Influenza, and RSV, three major respiratory diseases during the timeline
 
 ### Reporting Framework:
-  **The dataset captures data during mandated periods (required by the CMS) and voluntary periods (when reporting was optional)**
-  **These shifts reflect changes in reporting requirements set by CMS and likely highlight how policies impacted data collection and completeness**
+  1- The dataset captures data during mandated periods (required by the CMS) and voluntary periods (when reporting was optional)
+  2- These shifts reflect changes in reporting requirements set by CMS and likely highlight how policies impacted data collection and completeness
