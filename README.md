@@ -34,7 +34,7 @@ This repository contains a dataset compiled from weekly hospital reports across 
 * Seasonal analysis for three disease admission :Determine seasonal patterns in hospital admissions
 * Hospital Utilization Metrics: Assess hospital strain over time by comparing capacity and occupancy.
 * Outlier Metrics: Identify unexpected spikes or dips in hospitalizations and admissions.
-* 
+  
 
 ---
 
