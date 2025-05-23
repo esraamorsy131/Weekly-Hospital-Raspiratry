@@ -53,8 +53,7 @@ print(df.head())
 
 ## 📜 Dynamic Dasboard
 
-Link: https://app.powerbi.com/groups/02b66986-42c9-4a1b-9090-459956b4a268/reports/12bfcb80-0977-46ca-9bbf-1ba8aad2051c/96eb662db00011d8308b?experience=power-bi
-
+Link:https://app.powerbi.com/groups/02b66986-42c9-4a1b-9090-459956b4a268/reports/922a1754-ca09-4707-99c2-5820f50cf3d5/96eb662db00011d8308b?experience=power-bi
 ---
 
 ## 🤝 Contributing
