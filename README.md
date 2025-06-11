@@ -1,60 +1,74 @@
 # 🏥 Weekly U.S. Hospital Respiratory Data (2020–2024)
 
-This repository contains a comprehensive dataset compiled from weekly hospital reports across U.S. states, spanning from **2020 to 2024**. It focuses on **inpatient and ICU bed availability and usage**, especially for **respiratory illnesses** such as COVID-19, Influenza, and RSV (Respiratory Syncytial Virus).
+A dataset tracking ICU and inpatient bed usage across U.S. states due to respiratory illnesses (COVID-19, Influenza, RSV) from 2020–2024.
 
 ---
 
 ## 📁 Dataset Overview
 
-- **Time Range**: 2020–2024 (weekly records)
-- **Geographic Scope**: All U.S. states
-- **Total Columns**: 157 attributes, including:
-
-  - Inpatient & ICU bed counts (adult, pediatric, total)
-  - Bed occupancy percentages
-  - Weekly hospital admissions (COVID-19, Influenza, RSV)
-  - Week-over-week percentage changes
+- **Period**: 2020–2024
+- **Granularity**: Weekly
+- **Scope**: U.S. States
+- **Attributes**: 157 columns including admissions, bed capacity, occupancy, etc.
 
 ---
 
-## 🧠 Potential Use Cases
+## 📊 Exploratory Data Analysis (Python)
 
-- 🦠 Epidemiological trend analysis over time
-- 📉 Forecasting healthcare system capacity and resource demand
-- 🗺️ Regional/state-level public health comparison
-- 📆 Seasonal respiratory illness analysis
-- 📊 Dashboards and visual reports for public awareness or health policy
-- 🚨 Identifying spikes or anomalies in admissions/occupancy
+The file `respiratory_analysis.ipynb` contains:
 
----
+- Data loading and initial inspection
+- Null value treatment and datatype conversion
+- Weekly trend plotting (using matplotlib/seaborn)
+- State-level comparison for RSV/COVID/Flu admissions
+- Correlation heatmaps and anomaly detection
 
-## 📊 Example Analysis Scenarios
-
-- **Hospital Capacity Trends**: ICU & inpatient usage over time  
-- **Outbreak Impact Analysis**: Relationship between respiratory illness surges and hospital strain  
-- **State-by-State Comparisons**: Identify high-burden regions  
-- **Seasonality in Admissions**: Determine how COVID, RSV, and Influenza behave across seasons  
-- **Hospital Utilization Metrics**: Calculate average, peak, and lowest capacity usage  
-- **Outlier Detection**: Find unusual spikes/drops in weekly admissions  
-
----
-
-## 🧪 Getting Started (Python Example)
-
+#### Sample Code Snippet:
 ```python
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df = pd.read_csv('raw_weekly_hospital_respiratory_data_2020_2024.csv')
-print(df.head())
+df['week'] = pd.to_datetime(df['week_ending_date'])
 
----
+plt.figure(figsize=(12,6))
+df.groupby('week')['total_adult_inpatient_beds_occupied'].mean().plot()
+plt.title("Average Weekly Inpatient Occupancy (2020–2024)")
+plt.show()
 
 
-## 📈 Interactive Power BI Dashboard
-**Explore the live dashboard here:** 🔗 Power BI Dashboard
 
 
-## 🤝 Contributing
+📈 Interactive Dashboard (Power BI)
+A live dashboard was developed to present:
 
-Contributions and analyses are welcome. Feel free to fork this repo and share your insights or visualizations!
- 
+ICU/Inpatient trends over time
+
+RSV/COVID/Influenza admission rates
+
+State-by-state comparisons
+
+Peak occupancy weeks and capacity trends
+
+🔗 Live Power BI Dashboard:
+Click to View Dashboard
+
+📷 Dashboard Preview:
+
+
+
+🧠 Key Use Cases
+Hospital burden forecasting
+
+Respiratory disease seasonality
+
+Real-time public health decision support
+
+Outlier detection for emergency response
+
+🤝 Contributing
+Fork the repo and submit your analysis or improvements via pull request!
+
+yaml
+Copy
+Edit
