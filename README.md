@@ -39,7 +39,7 @@ plt.show()
 
 
 
-📈 Interactive Dashboard (Power BI)
+#### 📈 Interactive Dashboard (Power BI)
 A live dashboard was developed to present:
 
 ICU/Inpatient trends over time
