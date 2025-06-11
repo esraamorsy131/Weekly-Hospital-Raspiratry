@@ -1,74 +1,46 @@
 # 🏥 Weekly U.S. Hospital Respiratory Data (2020–2024)
 
-A dataset tracking ICU and inpatient bed usage across U.S. states due to respiratory illnesses (COVID-19, Influenza, RSV) from 2020–2024.
+This project contains weekly hospital data collected across U.S. states from 2020 to 2024.  
+It focuses on inpatient and ICU bed availability and usage related to major respiratory illnesses including:  
+**COVID-19**, **Influenza**, and **RSV (Respiratory Syncytial Virus)**.
 
 ---
 
 ## 📁 Dataset Overview
 
-- **Period**: 2020–2024
-- **Granularity**: Weekly
-- **Scope**: U.S. States
-- **Attributes**: 157 columns including admissions, bed capacity, occupancy, etc.
+- **Time Range:** 2020 to 2024 (weekly frequency)  
+- **Geographic Scope:** All U.S. states  
+- **Columns:** 157 columns  
+- **Example Fields Include:**
+  - Total ICU and inpatient beds (adult, pediatric)
+  - Bed occupancy rates
+  - Weekly admissions due to COVID-19, Influenza, and RSV
+  - Percent change from previous weeks
 
 ---
 
-## 📊 Exploratory Data Analysis (Python)
+## 🧠 Potential Use Cases
 
-The file `respiratory_analysis.ipynb` contains:
+- Analyzing trends in respiratory illness hospitalizations  
+- Forecasting healthcare resource demand (ICU/inpatient capacity)  
+- Public health dashboards and surveillance systems  
+- Comparing healthcare strain across states or regions  
+- Understanding seasonal illness trends  
+- Detecting outliers or sudden spikes in hospitalization data  
 
-- Data loading and initial inspection
-- Null value treatment and datatype conversion
-- Weekly trend plotting (using matplotlib/seaborn)
-- State-level comparison for RSV/COVID/Flu admissions
-- Correlation heatmaps and anomaly detection
+---
 
-#### Sample Code Snippet:
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
+## 📊 Interactive Dashboard (Power BI)
 
-df = pd.read_csv('raw_weekly_hospital_respiratory_data_2020_2024.csv')
-df['week'] = pd.to_datetime(df['week_ending_date'])
+An interactive dashboard was created using Power BI to visualize key metrics, including:
 
-plt.figure(figsize=(12,6))
-df.groupby('week')['total_adult_inpatient_beds_occupied'].mean().plot()
-plt.title("Average Weekly Inpatient Occupancy (2020–2024)")
-plt.show()
+- Weekly ICU and inpatient occupancy trends  
+- Admission rates for COVID-19, RSV, and Influenza  
+- State-by-state comparisons  
+- Peak hospitalization weeks and capacity strain  
+- Weekly available vs. occupied bed patterns  
 
-
-
-
-#### 📈 Interactive Dashboard (Power BI)
-A live dashboard was developed to present:
-
-ICU/Inpatient trends over time
-
-RSV/COVID/Influenza admission rates
-
-State-by-state comparisons
-
-Peak occupancy weeks and capacity trends
-
-🔗 Live Power BI Dashboard:
-Click to View Dashboard
-
-📷 Dashboard Preview:
+🔗 **Live Dashboard:**  
+[Click to View Power BI Dashboard](https://app.powerbi.com/groups/02b66986-42c9-4a1b-9090-459956b4a268/reports/922a1754-ca09-4707-99c2-5820f50cf3d5/96eb662db00011d8308b?experience=power-bi)
 
 
-
-🧠 Key Use Cases
-Hospital burden forecasting
-
-Respiratory disease seasonality
-
-Real-time public health decision support
-
-Outlier detection for emergency response
-
-🤝 Contributing
-Fork the repo and submit your analysis or improvements via pull request!
-
-yaml
-Copy
-Edit
