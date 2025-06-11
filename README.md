@@ -49,9 +49,13 @@ print(df.head())
 
 
 
+
+
+
+
+
 📈 Interactive Power BI Dashboard
-Explore the live dashboard here:
-🔗 Power BI Dashboard
+**Explore the live dashboard here:** 🔗 Power BI Dashboard
 
 
 ## 🤝 Contributing
